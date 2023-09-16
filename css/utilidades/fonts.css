@@ -1,0 +1,27 @@
+.font-a {
+  font: 400 4.5rem/1.35 "Alice", serif;
+}
+
+.font-r {
+  font: 400 0.75rem/1.35 "Roboto", sans-serif;
+}
+
+.font-n-xxl {
+  font: 400 1.5rem/1.35 "Nunito", sans-serif;
+}
+
+.font-n-xl {
+  font: 400 1.5rem/1.35 "Nunito", sans-serif;
+}
+
+.font-n-l-b {
+  font: 700 1.125rem/1.35 "Nunito", sans-serif;
+}
+
+.font-n-l {
+  font: 400 1.125rem/1.35 "Nunito", sans-serif;
+}
+
+.font-n-sm {
+  font: 700 0.875rem/1.35 "Nunito", sans-serif;
+}

@@ -14,6 +14,7 @@
 
 .menu {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -25,6 +26,7 @@
 
 .menu-itens ul {
   display: flex;
+  flex-wrap: nowrap;
   gap: 20px;
   padding: 10px;
   margin-right: 50px;
@@ -53,12 +55,14 @@
   position: relative;
   margin-top: -150px;
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
 
 .matricula-home-info div {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   margin-right: 50px;
   box-shadow: 0 5px 2px rgba(0, 0, 0, 0.3);
@@ -84,6 +88,7 @@
   border: none;
   border-radius: 0px 5px 5px 0px;
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
@@ -99,6 +104,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 50px;
+  margin-bottom: 70px;
 }
 
 .info img {
@@ -117,12 +123,14 @@
 .info-imgs {
   margin-left: 50px;
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
 }
 
 .info-imgs-local {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   gap: 10px;
   margin-top: 30px;
@@ -171,6 +179,7 @@
 
 .info-textos-lista ul li {
   display: flex;
+  flex-wrap: nowrap;
   gap: 20px;
   padding: 20px 0;
   align-items: center;
@@ -182,10 +191,118 @@
 }
 
 .info-textos-lista ul li span {
-  color: #445566;
+  color: var(--cor-g-4);
 }
 
 .info-textos-paragrafos p {
-  color: #445566;
+  color: var(--cor-g-4);
   margin-bottom: 20px;
+}
+
+.aulas-bg {
+  background: var(--cor-w-1);
+  box-shadow: inset 0 35px var(--cor-w-0);
+}
+
+.aulas:last-child {
+  padding-bottom: 50px;
+}
+
+.aulas h1 {
+  color: var(--cor-g-4);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.aulas-lista {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.aulas-img-prancha {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: -20px;
+}
+
+.aulas-item {
+  background-color: var(--cor-w-0);
+  width: 370px;
+  height: 434px;
+  border-radius: 4px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.aulas-item h3 {
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--cor-w-1);
+  max-width: 220px;
+  text-transform: uppercase;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aulas-item-info {
+  max-width: 220px;
+  margin: 0 auto;
+}
+
+.tipo-aluno {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.aulas-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.aulas-item-info p::before {
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: 2px solid var(--cor-r-1);
+  margin-right: 4px;
+}
+
+.aulas-item-info span {
+  border-top: 2px solid var(--cor-w-1);
+  padding: 30px 0;
+}
+
+.aulas-item-info a {
+  background-color: var(--cor-g-4);
+  width: 220px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aulas-item-info a::after {
+  content: url("../img/seta.svg");
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.sublinhado {
+  border-bottom: 2px solid var(--cor-r-1);
 }

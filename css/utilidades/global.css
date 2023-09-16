@@ -31,3 +31,7 @@ blockquote,
 dd {
   margin: 0;
 }
+
+.centralizar {
+  text-align: center;
+}

@@ -306,3 +306,11 @@
 .sublinhado {
   border-bottom: 2px solid var(--cor-r-1);
 }
+
+.referencia {
+  margin-top: -55vh;
+}
+
+.citacao {
+  height: 85vh;
+}

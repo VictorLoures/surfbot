@@ -42,7 +42,7 @@
 }
 
 .matricula-home {
-  position: absolute;
+  height: 429px;
 }
 
 .matricula-home-info h1 {
@@ -93,4 +93,62 @@
   content: url("../img/seta.svg");
   display: inline-block;
   margin-left: 12px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+}
+
+.info img {
+  border-radius: 5px;
+}
+
+.img-mapa {
+  width: 80%;
+  margin-top: -100px;
+}
+
+.img-mapa img,
+#pranchas {
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.info-imgs {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-imgs-local {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.cor-span-local {
+  color: #17222d;
+}
+
+.info-imgs-local p:nth-child(1n + 2)::before {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 10px;
+  background: var(--cor-b-2);
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.info-imgs-local p:first-child::before {
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  border: 2px solid var(--cor-r-1);
+  margin-right: 4px;
 }

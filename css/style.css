@@ -40,3 +40,57 @@
   border: 1px solid #fff;
   margin-right: 15px;
 }
+
+.matricula-home {
+  position: absolute;
+}
+
+.matricula-home-info h1 {
+  margin-left: 50px;
+}
+
+.matricula-home-info {
+  position: relative;
+  margin-top: -150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.matricula-home-info div {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.matricula-home-info div input {
+  width: 25vw;
+  height: 50px;
+  border-radius: 5px 0px 0 5px;
+  border: none;
+}
+
+.matricula-home-info div input::placeholder {
+  padding-left: 10px;
+  font: 700 0.875rem/1.35 "Nunito", sans-serif;
+  color: #bbccdd;
+}
+
+.matricula-home-info div a {
+  width: 13vw;
+  background: #ee2211;
+  height: 52px;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.matricula-home-info div a::after {
+  content: url("../img/seta.svg");
+  display: inline-block;
+  margin-left: 12px;
+}

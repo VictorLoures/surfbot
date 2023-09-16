@@ -1,3 +1,42 @@
 /* CSS de utilidades */
 @import "./utilidades/colors.css";
 @import "./utilidades/fonts.css";
+@import "./utilidades/global.css";
+
+.info-header {
+  background: var(--cor-b-2);
+  padding: 10px 30px;
+}
+
+.menu-bg {
+  background: #17222d;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 10px 30px;
+  padding: 10px 0;
+}
+
+.menu-itens ul {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  margin-right: 50px;
+}
+
+.menu-itens ul li::before {
+  content: "";
+  display: inline-block;
+  background: transparent;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 15px;
+}

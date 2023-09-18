@@ -314,3 +314,111 @@
 .citacao {
   height: 85vh;
 }
+
+.contato {
+  margin-top: 50px;
+}
+
+.contato h1 {
+  margin-bottom: 30px;
+}
+
+.contato-info {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+}
+
+.contato-info form {
+  margin-left: 50px;
+  border-right: 2px solid var(--cor-w-1);
+  margin-bottom: 50px;
+}
+
+.contato-info form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-info form input,
+.contato-info form textarea {
+  max-width: 80%;
+  background-color: var(--cor-w-1);
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.contato-info form input {
+  height: 30px;
+}
+
+.contato-info form button {
+  background-color: var(--cor-g-4);
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contato-info form button::after {
+  content: url("../img/seta.svg");
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.ver-mapa {
+  text-transform: uppercase;
+}
+
+.ver-mapa::after {
+  content: url("../img/seta-r.svg");
+  display: inline-block;
+  margin-left: 6px;
+}
+
+.contato-info-meios {
+  margin-left: 25%;
+}
+
+.contato-info-meios div {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--cor-w-1);
+  max-width: 80%;
+}
+
+.contato-info-meios div:last-child {
+  border: none;
+}
+
+.contato-info-meios:last-child {
+  position: relative;
+}
+
+.detalhe-horario::before {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  border: 2px solid #16c70b;
+  margin-left: -12px;
+  margin-top: 8px;
+  position: absolute;
+}
+
+.contato-icones {
+  margin-top: -30px;
+}
+
+.footer {
+  background: var(--cor-b-2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}

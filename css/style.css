@@ -499,7 +499,7 @@
     text-align: center;
   }
   .referencia {
-    margin-top: -20vh;
+    margin-top: -15vh;
   }
   .referencia p {
     font-size: 2rem;
@@ -521,10 +521,13 @@
   }
 
   .contato-info-meios {
-    margin-left: 10vh;
+    margin-left: 6vh;
   }
 
   .info-textos-lista span {
     font-size: 1rem;
+  }
+  .contato-info form {
+    border: none;
   }
 }

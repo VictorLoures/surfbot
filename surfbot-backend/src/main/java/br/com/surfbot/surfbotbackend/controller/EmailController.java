@@ -1,5 +1,6 @@
 package br.com.surfbot.surfbotbackend.controller;
 
+import java.util.Arrays;
 import java.util.Properties;
 
 import javax.mail.Address;
@@ -42,7 +43,7 @@ public class EmailController {
             @Override
             protected PasswordAuthentication getPasswordAuthentication() {
                 final PasswordAuthentication passwordAuthentication = super.getPasswordAuthentication();
-                return new PasswordAuthentication("surfbot9@gmail.com","");}});
+                return new PasswordAuthentication("surfbot9@gmail.com","kxah xyui uzez npie");}});
 
         /** Ativa Debug para sessão */
         session.setDebug(true);
@@ -55,7 +56,7 @@ public class EmailController {
 
             message.setRecipients(Message.RecipientType.TO, toUser);
             message.setSubject("Matrícula na Surfbot");
-            final String htmlMessage = "<p>teste</p>";
+            final String htmlMessage = getHtmlMatricula(email);
             final Multipart multipart = new MimeMultipart();
 
             //criando a primeira parte da mensagem
@@ -69,5 +70,10 @@ public class EmailController {
         } catch (final Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    private String getHtmlMatricula(final String email) {
+        final String emailFmt = Arrays.stream(email.split("@")).findFirst().orElse("");
+        return "";
     }
 }
